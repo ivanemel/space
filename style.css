@@ -1,0 +1,83 @@
+body{
+	margin: 0px;
+}
+
+.sky{
+	background-image: url(img/fon.png);
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.moon{
+	background-image: url(img/moon.png);
+	background-size: cover;
+	width: 300px;
+	height: 200px;
+	min-width: 100px;
+}
+
+
+
+.sheep{
+	width: 50px;
+	height: 50px;
+	transition-property: transform;
+	transition-duration: 2s;
+	position: absolute;
+	left: 45%;
+	top: 50%;
+}
+
+.sheep img{
+	height: 100%;
+}
+
+.sheep8{transition-delay: 0.1s;}
+.sheep7{transition-delay: 0.2s;}
+.sheep6{transition-delay: 0.3s;}
+.sheep5{transition-delay: 0.4s;}
+.sheep4{transition-delay: 0.5s;}
+.sheep3{transition-delay: 0.6s;}
+.sheep2{transition-delay: 0.7s;}
+.sheep1{transition-delay: 0.8s;}
+
+.moon:hover .sheep8{transform: translate(-200px, 0px);}
+.moon:hover .sheep7{transform: translate( -200px, 200px);}
+.moon:hover .sheep6{transform: translate(0px, 200px);}
+.moon:hover .sheep5{transform: translate(200px, 200px);}
+.moon:hover .sheep4{transform: translate(200px, 0px);}
+.moon:hover .sheep3{transform: translate(200px, -200px);}
+.moon:hover .sheep2{transform: translate(0px, -200px);}
+.moon:hover .sheep1{transform: translate(-200px, -200px);}
+
+@media (max-width: 798px){
+	.moon{
+		transform: translateX(-100px);
+		transition-duration: 3s;
+	}
+	.sheep{
+		transform: translateX(-100px);
+		transition-duration: 3s;
+	}
+	
+	.sheep8{transition-delay: 0.1s;}
+	.sheep7{transition-delay: 0.2s;}
+	.sheep6{transition-delay: 0.3s;}
+	.sheep5{transition-delay: 0.4s;}
+	.sheep4{transition-delay: 0.5s;}
+	.sheep3{transition-delay: 0.6s;}
+	.sheep2{transition-delay: 0.7s;}
+	.sheep1{transition-delay: 0.8s;}
+}
+
+@media (min-width: 798px){
+	.moon{
+		transform: translateX(100px);
+		transition-duration: 3s;
+	}
+}
